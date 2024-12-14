@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchyroll Forum</title>
+    <link rel="stylesheet" href="forumstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Munchyroll</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videoplayer.html">Shows</a></li>
+                <li><a href="forum.html" class="active">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Forum Sections -->
+        <section class="forum-section">
+            <h2>Forum</h2>
+            <p>Discuss your favorite anime, share memes, and connect with fellow fans!</p>
+            <div class="post-form">
+                <h3>Start a New Discussion</h3>
+                <form id="new-thread-form">
+                    <input type="text" id="thread-title" placeholder="Thread Title" required>
+                    <textarea id="thread-content" placeholder="Write your post..." rows="4" required></textarea>
+                    <button type="submit">Post Thread</button>
+                </form>
+            </div>
+
+            <div class="forum-threads">
+                <h3>Recent Discussions</h3>
+                <div class="thread">
+                    <h4><a href="#" class="watch-btn" data-thread="What's your favorite Bleach fight?">What's your favorite Bleach fight?</a></h4>
+                    <p>Started by AnimeFan123 | 10 Replies</p>
+                </div>
+                <div class="thread">
+                    <h4><a href="#" class="watch-btn" data-thread="Naruto vs. Sasuke: Who wins?">Naruto vs. Sasuke: Who wins?</a></h4>
+                    <p>Started by NinjaMaster | 24 Replies</p>
+                </div>
+                <div class="thread">
+                    <h4><a href="#" class="watch-btn" data-thread="What anime should I watch next?">What anime should I watch next?</a></h4>
+                    <p>Started by OtakuSensei | 5 Replies</p>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Munchyroll Forum | All Rights Reserved</p>
+    </footer>
+    <script src="forum.js"></script>
+</body>
+</html>

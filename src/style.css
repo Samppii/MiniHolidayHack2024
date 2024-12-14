@@ -229,3 +229,118 @@ footer {
     border-top: 3px solid #f16a1d;
     color: #f16a1d;
 }
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header .search-bar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    header .search-bar input,
+    header .search-bar button {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    /* Featured Section */
+    .featured {
+        padding: 1rem;
+    }
+
+    .shows {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .show {
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .show:hover {
+        transform: none; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Retro Ads Section */
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ads,
+    .news-or-player {
+        width: 100%;
+    }
+
+    .ad,
+    .news,
+    .video-player {
+        margin: 0 auto;
+    }
+}
+
+/* Small Phones (480px and below) */
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    .featured h2 {
+        font-size: 1.2rem;
+    }
+
+    .show {
+        font-size: 0.9rem;
+    }
+
+    .show-details {
+        font-size: 0.8rem;
+    }
+
+    /* Comments Section */
+    .comments-section h3 {
+        font-size: 1rem;
+    }
+
+    .comments .comment {
+        font-size: 0.9rem;
+    }
+
+    /* Ads and News */
+    .ad,
+    .news,
+    .video-player {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}

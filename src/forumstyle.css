@@ -1,0 +1,223 @@
+body {
+    font-family: "Press Start 2P", sans-serif; 
+    background: linear-gradient(to bottom, #f16a1d, #ffbd4b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem;
+    border-bottom: 3px solid #f16a1d;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #f16a1d;
+    text-shadow: 2px 2px 0 #000;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: #f16a1d;
+}
+
+header .search-bar input {
+    border: 2px solid #f16a1d;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+header .search-bar button {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 70%;
+}
+
+header .search-bar button:hover {
+    background: #e2c18a;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f16a1d;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Forum Section */
+.forum-section {
+    background: #fffaf0;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #000;
+    margin-bottom: 40px;
+}
+
+.forum-section h2 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.forum-section p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Post Form */
+.post-form {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.post-form h3 {
+    background: #ffa500;
+    color: #fff;
+    padding: 5px;
+    margin: 0 -10px 10px -10px;
+}
+
+.post-form input,
+.post-form textarea {
+    width: 98%;
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.post-form button {
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Forum Threads */
+.forum-threads .thread {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.forum-threads .thread h4 a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forum-threads .thread h4 a:hover {
+    color: #ffa500;
+}
+
+.forum-threads .thread p {
+    font-size: 12px;
+    color: #777;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 3px solid #f16a1d;
+    color: #f16a1d;
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Forum Section */
+    .forum-section {
+        padding: 10px;
+    }
+
+    /* Post Form */
+    .post-form input,
+    .post-form textarea {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .post-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Forum Threads */
+    .forum-threads .thread {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .forum-threads h3,
+    .forum-section h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    header .search-bar input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    header .search-bar button {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .forum-section h2 {
+        font-size: 16px;
+    }
+}
