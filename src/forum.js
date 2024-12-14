@@ -14,8 +14,7 @@ form.addEventListener("submit", (event) => {
     `;
 
     document.querySelector(".forum-threads").appendChild(newThread);
-
-    // Clearing the form ahaha cause why not (I can't do backend yet hehe)
+    
     form.reset();
 });
 

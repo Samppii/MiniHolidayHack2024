@@ -170,6 +170,8 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: black;
+    font-size: small;
 }
 
 .video-card {
@@ -184,9 +186,10 @@ main {
 
 .video-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-bottom: 2px solid #000;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 footer {
     background: #000;
@@ -232,6 +235,7 @@ footer {
     .video-player-section {
         margin-bottom: 20px;
     }
+    
 
     .title-description {
         padding: 10px;

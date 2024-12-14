@@ -91,14 +91,14 @@ main {
 .post-form {
     margin-bottom: 20px;
     padding: 10px;
-    background: #ffffff;
+    background: #000000;
     border: 2px solid #000;
     border-radius: 8px;
     box-shadow: 2px 2px 0px #000;
 }
 
 .post-form h3 {
-    background: #ffa500;
+    background: #f16a1d;
     color: #fff;
     padding: 5px;
     margin: 0 -10px 10px -10px;
@@ -115,7 +115,7 @@ main {
 }
 
 .post-form button {
-    background: #ffa500;
+    background: #f16a1d;
     color: #fff;
     border: none;
     padding: 10px 20px;
