@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchyroll Video Player</title>
+    <link rel="stylesheet" href="videoplayer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Munchyroll</a></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Video Player Section -->
+        <section class="video-player-section">
+            <div class="video-player2">
+                <iframe 
+                    width="100%" 
+                    height="700px" 
+                    src="https://www.youtube.com/embed/MU_KnbWE6y0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class = "title-description">
+                <h2>Anime Title</h2>
+                <p class="video-description">This is the description of the anime episode. Follow the adventures of Ichigo in Bleach!</p>
+            </div>
+        </section>
+
+        <!-- Comment Section -->
+        <section class="comments-section">
+            <h3>Comments</h3>
+            <form class="comment-form">
+                <textarea placeholder="Add a comment..." rows="4"></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div class="comments">
+                <div class="comment">
+                    <span><strong>User123:</strong> This episode was amazing!</span>
+                </div>
+                <div class="comment">
+                    <span><strong>AnimeFan:</strong> Can't wait for the next one!</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Videos Section -->
+        <section class="recommended-videos">
+            <h3>Recommended Videos</h3>
+            <div class="recommendations">
+                <div class="video-card">
+                    <img src="thumbnail1.jpg" alt="Video 1">
+                    <p>One Piece - Episode 101</p>
+                </div>
+                <div class="video-card">
+                    <img src="thumbnail2.jpg" alt="Video 2">
+                    <p>Naruto - Episode 52</p>
+                </div>
+                <div class="video-card">
+                    <img src="thumbnail3.jpg" alt="Video 3">
+                    <p>Dragonball Z - Episode 15</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Munchyroll | All Rights Reserved</p>
+    </footer>
+    <script src="videoplayer.js"></script>
+</body>
+</html>

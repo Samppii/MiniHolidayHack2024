@@ -1,0 +1,198 @@
+
+body {
+    font-family: "Press Start 2P", sans-serif; 
+    background: linear-gradient(to bottom, #f16a1d, #ffbd4b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem;
+    border-bottom: 3px solid #f16a1d;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #f16a1d;
+    text-shadow: 2px 2px 0 #000;
+    text-decoration: none;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: #f16a1d;
+}
+
+header .search-bar input {
+    border: 2px solid #f16a1d;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+header .search-bar button {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 70%;
+}
+
+header .search-bar button:hover {
+    background: #e2c18a;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f16a1d;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-player-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-player2 {
+    background: #fffaf0;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #000;
+}
+
+.video-description {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.title-description {
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.title-description h2 {
+    color: white;
+    margin: 0;
+}
+
+
+/* Comments Section */
+.comments-section {
+    background: #fffaf0;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #000;
+    margin-bottom: 40px;
+}
+
+.comments-section h3 {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    width: 98%;
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.comments .comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+/* Recommended Videos */
+.recommended-videos {
+    background: #fffaf0;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #000;
+}
+
+.recommended-videos h3 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.recommendations {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-card {
+    width: 30%;
+    background: #ffffff;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #000;
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 3px solid #f16a1d;
+    color: #f16a1d;
+}
