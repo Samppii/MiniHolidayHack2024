@@ -1,0 +1,144 @@
+body {
+    font-family: "Press Start 2P", sans-serif; 
+    background: linear-gradient(to bottom, #f16a1d, #e2c18a);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem;
+    border-bottom: 3px solid #f16a1d;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #f16a1d;
+    text-shadow: 2px 2px 0 #000;
+}
+
+header .search-bar input {
+    border: 2px solid #f16a1d;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+header .search-bar button {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 70%;
+}
+
+header .search-bar button:hover {
+    background: #e2c18a;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f16a1d;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000;
+}
+
+/* Featured Section */
+.featured {
+    background: #000;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured h2 {
+    text-align: center;
+    color: #f16a1d;
+}
+
+.shows {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.show {
+    background: #1a1a1a;
+    padding: 1rem;
+    border: 2px solid #f16a1d;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.show:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.show-details {
+    display: none;
+    background: #000;
+    color: #f16a1d;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #f16a1d;
+}
+
+.show:hover .show-details {
+    display: block;
+}
+
+/* Ads Section */
+.retro-ads {
+    display: flex;
+    justify-content: space-between;
+    background: #111;
+    padding: 1rem;
+    border: 3px dashed #f16a1d;
+}
+
+.ad {
+    width: 48%;
+    padding: 1rem;
+    background: #1a1a1a;
+    text-align: center;
+    color: #f16a1d;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 3px solid #f16a1d;
+    color: #f16a1d;
+}
