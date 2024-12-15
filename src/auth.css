@@ -1,0 +1,245 @@
+body {
+    font-family: "Press Start 2P", sans-serif; 
+    background: linear-gradient(to bottom, #f16a1d, #ffbd4b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem;
+    border-bottom: 3px solid #f16a1d;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #f16a1d;
+    text-shadow: 2px 2px 0 #000;
+}
+
+header .logo a{
+    text-decoration: none;
+    color: #f16a1d;
+}
+
+header .search-bar input {
+    border: 2px solid #f16a1d;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+header .search-bar button {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 70%;
+}
+
+header .search-bar button:hover {
+    background: #e2c18a;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #f16a1d;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000;
+}
+
+/* Auth Container */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: auto; 
+    padding: 1rem; 
+    margin-top: 0; 
+}
+
+.form-container {
+    background: #1a1a1a;
+    padding: 2rem;
+    border: 2px solid #f16a1d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0 0.2rem;
+    color: #fff;
+}
+
+.form-container input {
+    width: 92%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #f16a1d;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #000;
+    color: #fff;
+}
+
+.form-container button {
+    width: 100%;
+    background: #f16a1d;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 0 #000;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.form-container button:hover {
+    background: #e2c18a;
+    box-shadow: 4px 4px 0 #000;
+}
+
+.form-container .toggle {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.form-container .toggle a {
+    color: #f16a1d;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Ads design*/
+.retro-ads {
+    background: #000000;
+    padding: 20px;
+    border: 3px dashed #ff4500;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.retro-ads h2 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Ads Section */
+.ads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.ad {
+    background: #262626;
+    border: 2px solid #ff4500;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #ff4500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ad h3 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.ad p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+    color: #ff4500;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 3px solid #f16a1d;
+    color: #f16a1d;
+}
+
+.banner {
+    text-align: center; 
+    background-color: #000; 
+    padding: 0; 
+    border-top: 3px solid #f16a1d; 
+    border-bottom: 3px solid #f16a1d; 
+    margin: 1rem 0; 
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border: none; 
+}

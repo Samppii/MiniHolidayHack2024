@@ -86,13 +86,13 @@ function populateRecommendations() {
     });
 }
 
-// Redirect to videoplayer.html with updated query parameters
+// Redirect to video player page
 function redirectToVideo(video) {
     const url = `videoplayer.html?video=${encodeURIComponent(video.video)}&title=${encodeURIComponent(video.title)}&description=${encodeURIComponent(video.description)}`;
-    window.location.href = url; // Redirect to videoplayer.html
+    window.location.href = url; 
 }
 
-// Initialize recommendations on page load
+
 document.addEventListener("DOMContentLoaded", () => {
     populateRecommendations();
 });
@@ -163,10 +163,10 @@ function rotateAds(containerId) {
 }
 
 function initializeRotatingAds() {
-    const adContainers = ["ads-container", "bottom-ads-container"]; // Include both container IDs
+    const adContainers = ["ads-container", "bottom-ads-container"];
     adContainers.forEach((containerId) => {
-        rotateAds(containerId); // Initialize ads in each container
-        setInterval(() => rotateAds(containerId), 5000); // Rotate ads every 5 seconds
+        rotateAds(containerId);
+        setInterval(() => rotateAds(containerId), 5000);
     });
 }
 
