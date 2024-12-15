@@ -87,9 +87,6 @@ Munchyroll/
 ### Random Video Player
 - JavaScript dynamically selects a random video URL from a predefined array and updates the iframe source.
 
-### Popup
-- Clicking the "Go" button triggers a popup overlay with a retro-styled GIF and close button.
-
 ### Dynamic Ads
 - Ads in the designated containers are dynamically updated with random promotional content on page load.
 
@@ -108,13 +105,8 @@ Munchyroll/
 
 ## Credits
 
-- **Developer**: [Your Name]
+- **Developer**: Samip Gurung
 - **Icons and Fonts**: Google Fonts
-- **Content**: Various sources for video URLs and banners.
+- **Content**: Youtube, Google, Codedex...
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
