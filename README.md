@@ -1,4 +1,4 @@
-# MiniHolidayHackathon 2024 Codédex
+# MiniHolidayHackathon 2024 Codédex ❄️🎄
 ## Munchyroll
 
 Welcome to **Munchyroll**, a retro-themed streaming platform for anime enthusiasts. This project aims to provide a nostalgic experience with 90s-inspired design and functionality.
