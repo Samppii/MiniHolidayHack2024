@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchyroll</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="./src/index.html"> Munchyroll</a></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./src/index.html">Home</a></li>
+                <li><a href="./src/forum.html">Forums</a></li>
+                <li><a href="./src/login.html">Register/Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ads-container" id="ads-container">
+        <!-- Ads update JavaScript thingy weeeee -->
+    </div>
+    <main>
+        <section class="featured">
+            <h2>Featured Shows</h2>
+            <div class="shows">
+                <div class="show">
+                    <h3>Bleach</h3>
+                    <img src="./images/Bleach.webp" alt="Bleach" style="width: 100%; border-radius: 5px;">
+                    <div class="show-details">
+                        <p>Watch Bleach(Spoiler Alert!)</p>
+                        <a 
+                            href="videoplayer.html?video=https://www.youtube.com/embed/MU_KnbWE6y0&title=Bleach&description=Follow%20Ichigo%20in%20his%20quest%20to%20protect%20the%20living%20and%20fight%20the%20hollows." 
+                            class="watch-btn">Watch Now</a>
+                    </div>
+                </div>
+                <div class="show">
+                    <h3>One Piece</h3>
+                    <img src="./images/Onepiece.jpg" alt="One Piece" style="width: 100%; border-radius: 5px;">
+                    <div class="show-details">
+                        <p>One Piece is still going strong till this day!</p>
+                        <a 
+                            href="videoplayer.html?video=https://www.youtube.com/embed/ULdapEcU2SU?si=uS4pmnF-aSjXRj-M&title=One%20Piece&description=Join%20Luffy%20and%20his%20crew%20in%20their%20adventures%20to%20find%20the%20legendary%20treasure." 
+                            class="watch-btn">Watch Now</a>
+                    </div>
+                </div>
+                <div class="show">
+                    <h3>Naruto</h3>
+                    <img src="./images/Naruto Season 1 Banner.jpg" alt="Naruto" style="width: 100%; border-radius: 5px;">
+                    <div class="show-details">
+                        <p>Feeling Nostalgic? Watch Naruto and refresh your childhood memories.</p>
+                        <a 
+                            href="videoplayer.html?video=https://www.youtube.com/embed/qi2rByJed-E?si=mVid3igqe-WV6Ev6&title=Naruto&description=Experience%20the%20journey%20of%20a%20young%20ninja%20striving%20to%20become%20Hokage." 
+                            class="watch-btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="retro-ads">
+
+            <div class="news-or-player">
+                <div class="news">
+                    <h3>Latest News</h3>
+                    <ul>
+                        <li><a href="https://www.crunchyroll.com/news/latest/2024/11/15/one-piece-manga-takes-two-weeks-off-due-to-author-s-health">New episodes of One Piece!</a></li>
+                        <li><a href="https://www.codedex.io/community/hackathon">Codédex hosts a banger hackathon!</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Exclusive content for members!</a></li>
+                    </ul>
+                </div>
+                <div class="video-player">
+                    <h3>Watch Now</h3>
+                    <iframe 
+                        width="100%" 
+                        height="700px" 
+                        src="" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>  
+             </div>   
+        </section>
+
+        <div class="ads-container" id="bottom-ads-container">
+            <!-- Bottom ads will be dynamically updated here -->
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Munchy | All Rights Reserved</p>
+    </footer>
+    <script src="./src/script.js"></script>
+    
+    <div class="popup-overlay hidden" id="popup">
+        <div class="popup-content">
+            <img src="./images/popup.gif" alt="Work in Progress" class="popup-gif">
+            <p>Under Construction!</p>
+            <button class="close-btn" id="close-btn">Close</button>
+        </div>
+    </div>
+    
+</body>
+</html>
