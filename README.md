@@ -73,9 +73,13 @@ Munchyroll/
 ├── styles/
 │   ├── style.css        # Main styles
 │   ├── auth.css         # Styles for login/register page
+│   ├── videoplayer.css  # Styles for videoplayer
+│   ├── forums.css       # Styles for forums page
 ├── scripts/
 │   ├── script.js        # Main JavaScript
 │   ├── auth.js          # Login/Register functionality
+│   ├── videoplayer.js   # videoplayer script
+│   ├── forum.js         # forums script 
 ├── images/              # Images and GIFs
 └── README.md            # This file
 ```
