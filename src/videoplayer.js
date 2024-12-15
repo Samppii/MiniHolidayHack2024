@@ -18,43 +18,42 @@ commentForm.addEventListener("submit", (event) => {
 });
 
 // Video data for recommendations
-// Video data for recommendations
 const videoData = [
     {
         thumbnail: "../images/thumbnail1.jpg",
-        title: "One Piece - Episode 101",
-        description: "Join Luffy and his crew in their adventures to find the legendary treasure.",
-        video: "https://www.youtube.com/embed/ULdapEcU2SU"
+        title: "One Piece - Episode One",
+        description: "How we got introduced to Luffy.",
+        video: "https://www.youtube.com/embed/VwSsMB-BigE"
     },
     {
         thumbnail: "../images/thumbnail2.jpg",
-        title: "Naruto - Episode 52",
-        description: "Experience the journey of Naruto as he becomes the Hokage.",
-        video: "https://www.youtube.com/embed/qi2rByJed-E"
+        title: "Naruto - Is that you?",
+        description: "Funny Naruto Moment",
+        video: "https://www.youtube.com/embed/qJ7mWRgbz2I"
     },
     {
         thumbnail: "../images/thumbnail3.jpg",
-        title: "Dragonball - Episode 15",
-        description: "Watch Goku battle powerful foes in his epic journey.",
-        video: "https://www.youtube.com/embed/example3"
+        title: "Dragonball - Gotta eat",
+        description: "You gotta eat to grow strong!",
+        video: "https://www.youtube.com/embed/zM9_UuC4OTM"
     },
     {
         thumbnail: "../images/thumbnail4.jpg",
-        title: "Death Note - Episode 22",
-        description: "Follow Light's descent into darkness with the Death Note.",
-        video: "https://www.youtube.com/embed/example4"
+        title: "Death Note - Smarty Pants",
+        description: "Near is wayyyy smarter than you.",
+        video: "https://www.youtube.com/embed/U-QpwsdmePo"
     },
     {
         thumbnail: "../images/thumbnail5.jpg",
-        title: "Bleach - Episode 5",
-        description: "Ichigo battles the Hollows to protect his friends and family.",
-        video: "https://www.youtube.com/embed/example5"
+        title: "Bleach - Hollows Attack",
+        description: "How Ichigo got his Shinigami Powers.",
+        video: "https://www.youtube.com/embed/0UM2XGXE4DM"
     },
     {
         thumbnail: "../images/thumbnail6.jpg",
-        title: "Cowboy Bebop - Episode 63",
+        title: "Cowboy Bebop - Whatever happens, happens",
         description: "Follow Spike and his crew in their space bounty hunter adventures.",
-        video: "https://www.youtube.com/embed/example6"
+        video: "https://www.youtube.com/embed/LcBpamZ5-CQ"
     }
 ];
 
@@ -71,8 +70,7 @@ function shuffleArray(array) {
 // Populate recommendations dynamically
 function populateRecommendations() {
     const recommendationsContainer = document.getElementById("recommendations");
-    recommendationsContainer.innerHTML = ""; // Clear existing content
-
+    recommendationsContainer.innerHTML = "";
     const shuffledVideos = shuffleArray(videoData);
 
     // Display first 3 videos
@@ -100,49 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// // Video data
-// const videoData = [
-//     { thumbnail: "../images/thumbnail1.jpg", title: "One Piece - Episode 101" },
-//     { thumbnail: "../images/thumbnail2.jpg", title: "Naruto - Episode 52" },
-//     { thumbnail: "../images/thumbnail3.jpg", title: "Dragonball - Episode 15" },
-//     { thumbnail: "../images/thumbnail4.jpg", title: "Death Note - Episode 22" },
-//     { thumbnail: "../images/thumbnail5.jpg", title: "Bleach - Episode 5" },
-//     { thumbnail: "../images/thumbnail6.jpg", title: "Cowboy Bebop - Episode 63" }
-// ];
-
-// // Shuffle function
-// function shuffleArray(array) {
-//     for (let i = array.length - 1; i > 0; i--) {
-//         const j = Math.floor(Math.random() * (i + 1));
-//         [array[i], array[j]] = [array[j], array[i]];
-//     }
-// }
-
-// // Populate recommendations
-// function populateRecommendations() {
-//     const recommendationsContainer = document.getElementById("recommendations");
-//     recommendationsContainer.innerHTML = ""; // Clear the container
-
-//     // Shuffle videos
-//     shuffleArray(videoData);
-
-//     // Display the first 3 videos
-//     videoData.slice(0, 3).forEach((video) => {
-//         const videoCard = document.createElement("div");
-//         videoCard.classList.add("video-card");
-//         videoCard.innerHTML = `
-//             <img src="${video.thumbnail}" alt="${video.title}">
-//             <p>${video.title}</p>
-//         `;
-//         recommendationsContainer.appendChild(videoCard);
-//     });
-// }
-
-// // Execute on page load
-// document.addEventListener("DOMContentLoaded", populateRecommendations);
-
-
 // Get the video data from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const videoSrc = urlParams.get("video"); 
@@ -162,4 +117,58 @@ descriptionElement.textContent = decodeURIComponent(videoDescription);
 
 
 
+
+//Ads section for ads lol
+const adsData = [
+    {
+        title: "Codédex NGL",
+        content: "Learn to code like it's 1995! Limited-time offer.",
+        cta: "Click Here!"
+    },
+    {
+        title: "Munchyroll Premium",
+        content: "Stream your favorite retro shows ad-free. Sign up now!",
+        cta: "Try for Free!"
+    },
+    {
+        title: "Retro Console Sale",
+        content: "Get your favorite retro consoles at amazing prices!",
+        cta: "Shop Now!"
+    },
+    {
+        title: "Codédex Merch",
+        content: "Grab exclusive anime merchandise before it sells out!",
+        cta: "Explore Now!"
+    }
+];
+
+function createAdElement(ad) {
+    const adDiv = document.createElement("div");
+    adDiv.classList.add("ad");
+    adDiv.innerHTML = `
+        <h3>${ad.title}</h3>
+        <p>${ad.content}</p>
+        <span class="blink">${ad.cta}</span>
+    `;
+    return adDiv;
+}
+
+function rotateAds(containerId) {
+    const adsContainer = document.getElementById(containerId);
+    if (!adsContainer) return;
+
+    adsContainer.innerHTML = "";
+    const randomAd = adsData[Math.floor(Math.random() * adsData.length)];
+    adsContainer.appendChild(createAdElement(randomAd));
+}
+
+function initializeRotatingAds() {
+    const adContainers = ["ads-container", "bottom-ads-container"]; // Include both container IDs
+    adContainers.forEach((containerId) => {
+        rotateAds(containerId); // Initialize ads in each container
+        setInterval(() => rotateAds(containerId), 5000); // Rotate ads every 5 seconds
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initializeRotatingAds);
 

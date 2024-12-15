@@ -109,6 +109,54 @@ main {
     color: white;
     margin: 0;
 }
+/*Ads design*/
+.ads-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.ad {
+    background: #262626;
+    border: 2px solid #ff4500;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #ff4500;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ad h3 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.ad p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(2, start) infinite;
+    color: #ff4500;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
 
 
 /* Comments Section */
