@@ -221,3 +221,63 @@ footer {
         font-size: 16px;
     }
 }
+
+/*popup*/
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border: 3px solid #f16a1d;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 6px 6px 0px #000;
+    width: 300px;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    font-family: "Press Start 2P", sans-serif;
+    color: #ff4500;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.popup-content .close-btn {
+    background: #f16a1d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Press Start 2P", sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 2px 2px 0 #000;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.popup-content .close-btn:hover {
+    background: #e2c18a;
+    box-shadow: 4px 4px 0 #000;
+}
+
+.hidden {
+    display: none;
+}

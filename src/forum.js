@@ -26,3 +26,27 @@ document.querySelector('.forum-threads').addEventListener('click', (event) => {
         alert(`Threads coming soon! ${threadTitle}`);
     }
 });
+
+
+//popup
+document.addEventListener("DOMContentLoaded", () => {
+    const searchButton = document.querySelector(".search-bar button");
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("close-btn");
+
+
+    searchButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        popup.classList.remove("hidden");
+    });
+
+    closeButton.addEventListener("click", () => {
+        popup.classList.add("hidden");
+    });
+
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.classList.add("hidden");
+        }
+    });
+});

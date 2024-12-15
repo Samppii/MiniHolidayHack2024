@@ -22,11 +22,17 @@
             </ul>
         </nav>
     </header>
-    <div class ="banner">
+    <div class="banner">
         <img src="../images/banner.jpg" alt="banner" class="ad">
     </div>
     <main>
         <div class="auth-container">
+            <!-- Left GIF Section -->
+            <div class="auth-left">
+                <img src="../images/sale.gif" alt="Retro GIF">
+            </div>
+
+            <!-- Login Form -->
             <div class="form-container" id="login-form">
                 <h2>Login</h2>
                 <form>
@@ -41,6 +47,7 @@
                 </form>
             </div>
 
+            <!-- Hidden Register Form -->
             <div class="form-container hidden" id="register-form">
                 <h2>Register</h2>
                 <form>
@@ -57,15 +64,41 @@
                     <p class="toggle">Already have an account? <a href="#" id="show-login">Login here</a></p>
                 </form>
             </div>
+
+            <!-- Right Offer Section -->
+            <div class="auth-right">
+                <div class="offer">
+                    <h3>Special Offer!</h3>
+                    <p>Sign up now and get <strong>1 month free premium!</strong></p>
+                    <p>Stream your favorite shows ad-free.</p>
+                </div>
+                <div class="offer">
+                    <h3>Special Offer!</h3>
+                    <p>Sign up now and get <strong>access to the discord community!</strong></p>
+                    <p>Get into the community!</p>
+                </div>
+                <div class="offer">
+                    <h3>Special Offer!</h3>
+                    <p>Get premium for <strong>$3.99!</strong></p>
+                    <p>Stream your favorite shows ad-free.</p>
+                </div>
+            </div>
         </div>
     </main>
 
     <div class="ads-container" id="bottom-ads-container">
-            <!-- Bottom ads will be dynamically updated here -->
-        </div>
+        <!-- Bottom ads will be dynamically updated here -->
+    </div>
     <footer>
         <p>&copy; 2024 Munchyroll | All Rights Reserved</p>
     </footer>
+    <div class="popup-overlay hidden" id="popup">
+        <div class="popup-content">
+            <img src="../images/popup.gif" alt="Work in Progress" class="popup-gif">
+            <p>Under Construction!</p>
+            <button class="close-btn" id="close-btn">Close</button>
+        </div>
+    </div>
     <script src="auth.js"></script>
 </body>
 </html>

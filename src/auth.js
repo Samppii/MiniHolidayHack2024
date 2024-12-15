@@ -22,23 +22,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const adsData = [
     {
-        title: "Codedex NGL",
+        title: "Codédex.io",
         content: "Learn to code like it's 1995! Limited-time offer.",
         cta: "Click Here!"
     },
     {
         title: "Munchyroll Premium",
-        content: "Stream your favorite retro shows ad-free. Sign up now!",
+        content: "Stream your favorite retro shows ad-free. Venmo $20 to Samppi!",
         cta: "Try for Free!"
     },
     {
-        title: "Retro Console Sale",
-        content: "Get your favorite retro consoles at amazing prices!",
+        title: "Retro Console FREE!",
+        content: "Win Codédex hackathon for SNES!",
         cta: "Shop Now!"
     },
     {
-        title: "Anime Merch",
-        content: "Grab exclusive anime merchandise before it sells out!",
+        title: "Codédex Merch",
+        content: "Grab exclusive Codédex merchandise before it sells out!",
         cta: "Explore Now!"
     }
 ];
@@ -72,3 +72,26 @@ function initializeRotatingAds() {
 }
 
 document.addEventListener("DOMContentLoaded", initializeRotatingAds);
+
+//popup
+document.addEventListener("DOMContentLoaded", () => {
+    const searchButton = document.querySelector(".search-bar button");
+    const popup = document.getElementById("popup");
+    const closeButton = document.getElementById("close-btn");
+
+
+    searchButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        popup.classList.remove("hidden");
+    });
+
+    closeButton.addEventListener("click", () => {
+        popup.classList.add("hidden");
+    });
+
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.classList.add("hidden");
+        }
+    });
+});
