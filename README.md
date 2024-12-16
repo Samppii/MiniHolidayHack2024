@@ -48,7 +48,7 @@ Welcome to **Munchyroll**, a retro-themed streaming platform for anime enthusias
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/munchyroll.git
+   git clone https://github.com/samppii/munchyroll.git
    ```
 
 2. Navigate to the project directory:
